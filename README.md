@@ -1,4 +1,4 @@
-# Software Engineering Laboratory Portfolio (Labs 1 – 6)
+# Software Engineering Laboratory Portfolio (Labs 1 – 7)
 
 **Student Name:** Kushitha K  
 **SRN:** PES1UG24CS247  
@@ -19,13 +19,14 @@ This repository consolidates all deliverables, reports, source code, and test su
 | **Lab 4** | **Vibe Coding & Game Logic Engineering** | [`Lab4_VibeCoding/`](./Lab4_VibeCoding/) & [`02_air_hockey-main/`](./02_air_hockey-main/)<br>• Screen Recordings: Before (`SE LAB 04 BEFORE VIDEO _ VIBE CODING.mp4`) & After (`SE__LAB 04__AFTER VIDEO __VIBE CODING.mp4`)<br>• LLM / Vibe Coding Prompt History: `SE_LAB 04_PES1UG24CS247_VIBE CODING__CHAT HISTORY.pdf`<br>• Air Hockey Python Code: (`main.py`, `game_engine.py`, `ai.py`, `collisions.py`, `paddle.py`, `puck.py`, `renderer.py`, `requirements.txt`)<br>• Verification Report: `Verify Air Hockey Project.html`<br>• GitHub Copilot Experiments: [`github_copilot/`](./Lab4_VibeCoding/github_copilot/) (`github_copilot_code.png`, `Copilot_Repository_Link.txt`) |
 | **Lab 5** | **Static Code Analysis (Pylint, Bandit, Flake8)** | [`Lab5_Static_Code_Analysis/`](./Lab5_Static_Code_Analysis/)<br>• Cleaned & Refactored Source Code: `pos_system.py` (**Pylint Score: 10.00/10**, **0 Bandit findings**, **0 Flake8 issues**)<br>• Completed Issue Tracking Table: `issues.md`<br>• Answers to Lab Reflection Questions: `reflection.md`<br>• Static Analysis Baseline Reports (Before): `pylint_report_before.txt`, `bandit_report_before.txt`, `flake8_report_before.txt`<br>• Static Analysis Verified Reports (After): `pylint_report_after.txt`, `bandit_report_after.txt`, `flake8_report_after.txt` |
 | **Lab 6** | **Code and Branch Coverage Analysis** | [`Lab6_Code_and_Branch_Coverage/car_rental_rate/`](./Lab6_Code_and_Branch_Coverage/car_rental_rate/)<br>• Tested Application Module: `car_rental_rate.py`<br>• Code Coverage Test Suite: `CodeCoverageTest_car_rental_rate.py` (**100% Statement Coverage**)<br>• Branch Coverage Test Suite: `BranchCoverageTest_car_rental_rate.py` (**100% Branch Coverage**)<br>• Unified Pytest Suite: `test_car_rental.py` (**100% Statements / 100% Branches**)<br>• Terminal Execution Screenshots: `code_coverage_screenshot.png`, `branch_coverage_screenshot.png`<br>• Text Reports: `code_coverage_report.txt`, `branch_coverage_report.txt` |
+| **Lab 7** | **Fuzzing for Input Validation Bugs** | [`Lab7_Fuzz_Testing/`](./Lab7_Fuzz_Testing/)<br>• Fixed Application Script: `processor.py` (Defensively hardened against crashes)<br>• Property-Based Fuzz Tests: `test_processor.py` (Hypothesis `@given` test suite)<br>• Comprehensive Report with Screenshots: `Lab_7_Fuzzing_Report.pdf`<br>• Step Screenshots: [`screenshots/`](./Lab7_Fuzz_Testing/screenshots/) (`step2_buggy_processor_output.png`, `step4_test_cases_failing.png`, `step5_fixed_processor_output.png`, `step6_test_cases_passing.png`) |
 
 ---
 
 ## Standalone Repositories
 
 - **Lab 4 Air Hockey Standalone:** [`02_air_hockey-main/`](./02_air_hockey-main/)
-- **Lab 6 Car Rental Standalone Repo:** [SETAPESU26/L6_L7_02_car_rental_rate](https://github.com/SETAPESU26/L6_L7_02_car_rental_rate)
+- **Lab 6 & Lab 7 Car Rental Standalone Repo:** [SETAPESU26/L6_L7_02_car_rental_rate](https://github.com/SETAPESU26/L6_L7_02_car_rental_rate)
 
 ---
 
@@ -69,15 +70,26 @@ Software_Engineering_LABS/
 │   ├── flake8_report_before.txt / flake8_report_after.txt
 │   └── pylint_report_before.txt / pylint_report_after.txt
 │
-└── Lab6_Code_and_Branch_Coverage/             # Lab 6 Code & Branch Coverage Analysis
-    └── car_rental_rate/
-        ├── car_rental_rate.py                 # Module Under Test
-        ├── CodeCoverageTest_car_rental_rate.py    # 100% Code Coverage Test Suite
-        ├── BranchCoverageTest_car_rental_rate.py  # 100% Branch Coverage Test Suite
-        ├── test_car_rental.py                 # Full Pytest Test Suite
-        ├── code_coverage_screenshot.png       # Terminal Screenshot (>90% Code Coverage)
-        ├── branch_coverage_screenshot.png     # Terminal Screenshot (>90% Branch Coverage)
-        ├── code_coverage_report.txt           # Coverage report output
-        ├── branch_coverage_report.txt         # Branch coverage report output
-        └── README.md                          # Lab 6 Documentation
+├── Lab6_Code_and_Branch_Coverage/             # Lab 6 Code & Branch Coverage Analysis
+│   └── car_rental_rate/
+│       ├── car_rental_rate.py                 # Module Under Test
+│       ├── CodeCoverageTest_car_rental_rate.py    # 100% Code Coverage Test Suite
+│       ├── BranchCoverageTest_car_rental_rate.py  # 100% Branch Coverage Test Suite
+│       ├── test_car_rental.py                 # Full Pytest Test Suite
+│       ├── code_coverage_screenshot.png       # Terminal Screenshot (>90% Code Coverage)
+│       ├── branch_coverage_screenshot.png     # Terminal Screenshot (>90% Branch Coverage)
+│       ├── code_coverage_report.txt           # Coverage report output
+│       ├── branch_coverage_report.txt         # Branch coverage report output
+│       └── README.md                          # Lab 6 Documentation
+│
+└── Lab7_Fuzz_Testing/                         # Lab 7 Fuzz Testing with Hypothesis
+    ├── processor.py                           # Hardened Application Module
+    ├── test_processor.py                      # Hypothesis Fuzz Testing Suite
+    ├── Lab_7_Fuzzing_Report.pdf               # Comprehensive PDF Report with Screenshots
+    ├── screenshots/                           # Terminal Execution Screenshots (Steps 2, 4, 5, 6)
+    │   ├── step2_buggy_processor_output.png
+    │   ├── step4_test_cases_failing.png
+    │   ├── step5_fixed_processor_output.png
+    │   └── step6_test_cases_passing.png
+    └── README.md                              # Lab 7 Documentation
 ```
